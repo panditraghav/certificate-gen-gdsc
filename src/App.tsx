@@ -66,7 +66,7 @@ function NameSelect({
   onChange,
 }: {
   participants: Array<Array<string>>;
-  onChange: (string) => void;
+  onChange: (arg0: string) => void;
 }) {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
