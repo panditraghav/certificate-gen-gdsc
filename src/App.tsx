@@ -48,11 +48,13 @@ function App() {
   }
 
   return (
-    <div className="flex items-center justify-center flex-col h-screen space-y-12 bg-background">
+    <div className="py-24 flex items-center justify-start flex-col h-screen space-y-12 bg-background">
       <div>
-        <img src={gdscLogo} className="h-24" alt="GDSC Logo" />
+        <img src={gdscLogo} className="h-14 md:h-24" alt="GDSC Logo" />
       </div>
-      <h1 className="text-3xl">Google cloud study jams</h1>
+      <h1 className="text-xl md:text-3xl">
+        Google Cloud Study Jam Certificate
+      </h1>
       <NameSelect participants={participants} onChange={setSelected} />
       <Button onClick={handleDownload}>Download</Button>
     </div>
