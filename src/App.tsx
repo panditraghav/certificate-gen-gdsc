@@ -92,9 +92,9 @@ function NameSelect({
       </PopoverTrigger>
       <PopoverContent className="w-[200px] h-[300px] p-0">
         <Command>
-          <CommandInput placeholder="Search framework..." />
-          <CommandEmpty>No framework found.</CommandEmpty>
-          <CommandGroup>
+          <CommandInput placeholder="Search names..." />
+          <CommandEmpty>Name not found.</CommandEmpty>
+          <CommandGroup className="overflow-y-scroll scrollbar-thin scrollbar-thumb-secondary-foreground scrollbar-track-secondary">
             {participants.map((participant) => (
               <CommandItem
                 key={participant[0]}
